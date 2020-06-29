@@ -9,6 +9,10 @@ Derste yazdığımız ufak çaplı kodları sizlerle paylaşıcam;
 
 
 // constructors and derived classes
+
+
+
+
 #include <iostream>
 using namespace std;
 
