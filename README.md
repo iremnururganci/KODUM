@@ -22,6 +22,8 @@ using namespace std;
 
 
 //------------------Anne Sınıfı-------
+
+
 class Mother {
 public:
 	Mother()
@@ -45,8 +47,9 @@ public:
 
 
 
-
 //------------------Kız Çocuk Sınıfı-------
+
+
 class Daughter : public Mother {
 public:
 	Daughter(int a)
@@ -66,6 +69,9 @@ public:
 
 
 //---------------- Erkek Çocuk Sınıfı ----------
+
+
+
 class Son : public Mother {
 public:
 	Son(int a) : Mother(a)
@@ -84,6 +90,9 @@ public:
 
 
 //---------------Main Fonksiyonu---------------
+
+
+
 int main()
 {
 	Mother *mom = new Mother;
