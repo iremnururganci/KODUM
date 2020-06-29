@@ -25,22 +25,34 @@ using namespace std;
 
 
 class Mother {
+
 public:
+
 	Mother()
+
 	{
+
 		cout << "Mother: no parameters\n";
+
 	}
+
 	Mother(int a)
+
 	{
+
 		cout << "Mother: int parameter\n";
+
 	}
 
 	~Mother()
-	{
-		cout << "Mother: destructor\n";
-	}
-};
 
+	{
+
+		cout << "Mother: destructor\n";
+
+	}
+
+};
 
 
 
@@ -51,19 +63,28 @@ public:
 
 
 class Daughter : public Mother {
+
 public:
+
 	Daughter(int a)
+
 	{
+
 		cout << "Daughter: int parameter\n\n";
+
 	}
+
 
 	~Daughter()
+
 	{
+
 		cout << "Daughter: destructor\n";
+
 	}
 
-};
 
+};
 
 
 
@@ -73,16 +94,26 @@ public:
 
 
 class Son : public Mother {
-public:
+
+public: 
+
 	Son(int a) : Mother(a)
+
 	{
+
 		cout << "Son: int parameter\n\n";
+
 	}
 
+
 	~Son()
+
 	{
+
 		cout << "Son: destructor\n";
+
 	}
+
 };
 
 
@@ -94,13 +125,20 @@ public:
 
 
 int main()
-{
-	Mother *mom = new Mother;
-	Daughter tuğra(0);
-	Son turan(0);
 
+{
+
+	Mother *mom = new Mother;
+
+	Daughter tuğra(0);
+
+	Son turan(0);
+    
 	delete mom;
+
 	return 0;
+
+    
 }
 
 
